@@ -11,12 +11,13 @@ $text-color: #333333;
 // ----------------------------------------------body----------------------------------------------
 body {
     font-family: PFHandbookPro, sans-serif;
-    font-size: 22px;
     font-weight: 300;
+    font-size: 22px;
+    line-height: 30px;
     letter-spacing: 0em;
     color: $text-color;
 
-    min-height: 3000px; //temp
+    min-height: 8000px; //temp
 }
 
 // ----------------------------------------------wrapper----------------------------------------------
@@ -41,4 +42,8 @@ body {
 @import 'main.scss';
 @import 'mainslider.scss';
 @import 'about.scss';
+@import 'catalog.scss';
+@import 'news.scss';
+@import 'specialists.scss';
+@import 'partnersslider.scss';
 @import 'footer.scss';

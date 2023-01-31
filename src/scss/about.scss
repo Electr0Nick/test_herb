@@ -1,6 +1,8 @@
 .about {
-  border: 1px solid #000;
+  position: relative;
   &__container {
+    position: relative;
+    z-index: 10;
   }
   &__title {
     margin-bottom: 48px;
@@ -40,9 +42,23 @@
     }
   }
   &__btn {
-
   }
   &__figure {
+    position: absolute;
+    z-index: 1;
+    &_01 {
+      top: 0;
+      left: 40%;
+    }
+    &_02 {
+      top: 45%;
+      right: 0;
+      transform: translateX(50%);
+    }
+    &_03 {
+      bottom: -6%;
+      right: 15%;
+    }
   }
 }
 .dignity {

@@ -1,17 +1,51 @@
 .button{
   border-radius: 3px;
   padding: 18px 42px 18px 42px;
-  background-color: #EF4D9C;
-  color: #FFF;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
+  &_pink {
+    background-color: #EF4D9C;
+    color: #FFF;
+  }
+  &_zero {
+    background-color: transparent;
+    border: 1px solid $text-color;
+    color: $text-color;
+  }
+  &_grey {
+    background-color: #9B9B9C;
+    color: #FFF;
+  }
 }
+
 .title {
   font-weight: 500;
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.01em;
   text-transform: uppercase;
+}
+
+.vertical-panel {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  z-index: 10;
+  top: -1%;
+  left: 0;
+  padding-top: 1%;
+  height: 102%;
+  width: 125px;
+  background-color: #fff;
+  &__title {
+    color: #565658;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+  }
 }

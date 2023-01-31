@@ -1,0 +1,53 @@
+.catalog {
+  position: relative;
+  z-index: 9;
+  &__title {
+  }
+  &__card {
+    width: 100%;
+  }
+}
+.prod-card {
+  height: 368px;
+  overflow: hidden;
+  margin-bottom: 2px;
+  &_green {
+    background-color: #A3E07E;
+  }
+  &_yellow {
+    background-color: #FDED84;
+  }
+  &_pink {
+    background-color: #FF9CCA;
+  }
+  &_orange {
+    background-color: #FDB96B;
+  }
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  &__info {
+    flex: 0 0 38%;
+  }
+  &__icon {
+    margin-bottom: 24px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    margin-bottom: 24px;
+  }
+  &__description {
+  }
+  &__image {
+    transform: translateY(22%);
+  }
+  &__btn {
+  }
+}
