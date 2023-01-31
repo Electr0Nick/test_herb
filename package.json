@@ -1,0 +1,49 @@
+{
+  "name": "gulp_template_v2",
+  "version": "1.0.0",
+  "description": "gulp template",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "dev": "gulp",
+    "clean": "gulp clean",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Electr0Nick/gulp_template_v2.git"
+  },
+  "author": "Electr0Nick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Electr0Nick/gulp_template_v2/issues"
+  },
+  "homepage": "https://github.com/Electr0Nick/gulp_template_v2#readme",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "del": "6.1.1",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-file-include": "latest",
+    "gulp-fonter": "latest",
+    "gulp-group-css-media-queries": "latest",
+    "gulp-htmlmin": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-newer": "latest",
+    "gulp-notify": "latest",
+    "gulp-plumber": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-ttf2woff2": "latest",
+    "gulp-webp": "latest",
+    "gulp-webp-html": "latest",
+    "gulp-webpcss": "latest",
+    "gulp-zip": "latest",
+    "sass": "latest",
+    "webp-converter": "2.2.3",
+    "webpack": "latest",
+    "webpack-stream": "latest"
+  }
+}

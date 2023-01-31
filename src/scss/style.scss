@@ -1,0 +1,44 @@
+// ----------------------------------------------reset----------------------------------------------
+@import 'reset.scss';
+
+// ----------------------------------------------fonts----------------------------------------------
+@import "fonts.scss";
+// @import 'iconsfont.scss';
+
+// ----------------------------------------------variables----------------------------------------------
+$text-color: #333333;
+
+// ----------------------------------------------body----------------------------------------------
+body {
+    font-family: PFHandbookPro, sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 0em;
+    color: $text-color;
+
+    min-height: 3000px; //temp
+}
+
+// ----------------------------------------------wrapper----------------------------------------------
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+// ----------------------------------------------container----------------------------------------------
+.container {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+// ----------------------------------------------import----------------------------------------------
+@import 'components.scss';
+@import 'header.scss';
+@import 'main.scss';
+@import 'mainslider.scss';
+@import 'about.scss';
+@import 'footer.scss';
