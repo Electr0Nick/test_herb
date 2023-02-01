@@ -1,5 +1,29 @@
 .partnersslider {
+  display: flex;
+  align-items: center;
   height: 404px;
+  min-width: 0;
   background-color: #F8F8F8;
-  border: 1px solid #000;
+  &__slider {
+    height: 186px;
+    width: 100%;
+    overflow: hidden;
+  }
+  &__wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition-timing-function: linear;
+  }
+  &__slide {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 278px;
+    background-color: #FFF;
+  }
+  &__logo {
+  }
 }

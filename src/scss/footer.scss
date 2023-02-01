@@ -14,7 +14,6 @@
   }
   &__nav {
     flex: 0 0 50%;
-    border: 1px solid #000;
   }
   &__info {
     display: flex;
@@ -94,12 +93,22 @@
 }
 .second-nav {
   &__list {
-    column-width: 200px;
+    column-width: 230px;
   }
   &__item {
   }
   &__link {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
   }
   &__sublink {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: 0.01em;
   }
 }
