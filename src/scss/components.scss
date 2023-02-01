@@ -6,13 +6,13 @@
   line-height: 24px;
   text-transform: uppercase;
   &_pink {
-    background-color: #EF4D9C;
+    background-color: $pink-color;
     color: #FFF;
   }
   &_zero {
     background-color: transparent;
-    border: 1px solid $text-color;
-    color: $text-color;
+    border: 1px solid $main-color;
+    color: $main-color;
   }
   &_grey {
     background-color: #9B9B9C;
@@ -26,6 +26,7 @@
   line-height: 64px;
   letter-spacing: 0.01em;
   text-transform: uppercase;
+  cursor: default;
 }
 
 .vertical-panel {

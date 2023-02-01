@@ -6,7 +6,10 @@
 // @import 'iconsfont.scss';
 
 // ----------------------------------------------variables----------------------------------------------
-$text-color: #333333;
+$main-color: #333333;
+$pink-color: #EF4D9C;
+
+$media-mnw1: 'min-width: 992px';
 
 // ----------------------------------------------body----------------------------------------------
 body {
@@ -15,7 +18,7 @@ body {
     font-size: 22px;
     line-height: 30px;
     letter-spacing: 0em;
-    color: $text-color;
+    color: $main-color;
 
     min-height: 8000px; //temp
 }
@@ -47,3 +50,4 @@ body {
 @import 'specialists.scss';
 @import 'partnersslider.scss';
 @import 'footer.scss';
+@import 'feedback.scss';

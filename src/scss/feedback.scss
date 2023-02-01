@@ -1,0 +1,135 @@
+.feedback {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 684px;
+  padding-top: 106px;
+  background-color: #FFF;
+  border-left: 1px solid #E0E0E0;
+  transform: translateX(684px);
+  transition: 400ms;
+  &__title {
+    margin-bottom: 90px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    cursor: default;
+  }
+  &__form {
+    width: 382px;
+  }
+  &__label {
+    opacity: 0;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    color: #959595;
+    &_required {
+      &::after {
+        content: '*';
+        color: $pink-color;
+      }
+    }
+  }
+  &__input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #565658;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+    color: #333333;
+    &::placeholder {
+      color: #959595;
+    }
+  }
+  &__agreement {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  &__checkbox {
+    display: none;
+    &:checked {
+      & + .feedback__castom-checkbox .feedback__check {
+        display: block;
+      }
+    }
+  }
+  &__castom-checkbox {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+    border: 1px solid #565658;
+    border-radius: 3px;
+  }
+  &__check {
+    display: none;
+  }
+  &__description {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    cursor: default;
+  }
+  &__btn {
+    margin-bottom: 36px;
+  }
+  &__note {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    cursor: default;
+    &::before {
+      content: '* ';
+      color: $pink-color;
+    }
+  }
+  &__ticket {
+    position: absolute;
+    background-color: #F9931F;;
+    width: 48px;
+    color: #FFF;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_max {
+      top: 20%;
+      left: 0 - 48px;
+      height: 188px;
+      border-radius: 3px 0% 0% 3px / 3px 0% 0% 3px ;
+      filter: drop-shadow(-2px 0px 6px rgba(0, 0, 0, 0.2));
+      & span {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+      }
+    }
+    &_min {
+      top: 50%;
+      left: 0;
+      height: 56px;
+      border-radius: 0% 3px 3px 0% / 0% 3px 3px 0% ;
+      transform: translateY(-50%);
+      & img {
+        display: block;
+      }
+    }
+  }
+}

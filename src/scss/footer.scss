@@ -21,6 +21,7 @@
     justify-content: space-between;
     font-size: 16px;
     line-height: 24px;
+    cursor: default;
   }
   &__years {
     font-weight: 500;
@@ -37,6 +38,7 @@
     margin-bottom: 25px;
     font-size: 19px;
     line-height: 24px;
+    cursor: default;
   }
   &__form {
     display: flex;
@@ -71,6 +73,13 @@
     border-radius: 50%;
     margin-right: 16px;
     overflow: hidden;
+    transition: 300ms;
+    @media ($media-mnw1) {
+      &:hover {
+        border: 1px solid transparent;
+        background-color: $pink-color;
+      }
+    }
   }
   &__btn {
     display: flex;

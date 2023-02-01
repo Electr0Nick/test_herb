@@ -33,8 +33,24 @@
   }
 }
 .n-card {
+  @media ($media-mnw1) {
+    &:hover {
+      .n-card__title {
+        color: $pink-color;
+      }
+      .n-card__image {
+        & img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
   &__image {
     margin-bottom: 36px;
+    overflow: hidden;
+    & img {
+      transition: 300ms;
+    }
   }
   &__data {
     margin-bottom: 16px;
@@ -48,6 +64,7 @@
     font-weight: 500;
     font-size: 32px;
     line-height: 32px;
+    transition: 300ms;
   }
   &__description {
   }

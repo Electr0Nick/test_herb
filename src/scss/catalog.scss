@@ -11,17 +11,52 @@
   height: 368px;
   overflow: hidden;
   margin-bottom: 2px;
+  @media ($media-mnw1) {
+    &:hover {
+      .prod-card__image {
+        transform: translateY(13%);
+      }
+      .prod-card__btn {
+        background-color: $main-color;
+        color: #FFF;
+      }
+    }
+  }
   &_green {
     background-color: #A3E07E;
+    transition: 300ms;
+    @media ($media-mnw1) {
+      &:hover {
+      background-color: #71BD44;
+      }
+    }
   }
   &_yellow {
     background-color: #FDED84;
+    transition: 300ms;
+    @media ($media-mnw1) {
+      &:hover {
+        background-color: #FFDD00;
+      }
+    }
   }
   &_pink {
     background-color: #FF9CCA;
+    transition: 300ms;
+    @media ($media-mnw1) {
+      &:hover {
+        background-color: #F669B8;
+      }
+    }
   }
   &_orange {
     background-color: #FDB96B;
+    transition: 300ms;
+    @media ($media-mnw1) {
+      &:hover {
+        background-color: #F9931F;
+      }
+    }
   }
   &__container {
     position: relative;
@@ -42,12 +77,16 @@
     line-height: 48px;
     letter-spacing: 0.01em;
     margin-bottom: 24px;
+    cursor: default;
   }
   &__description {
+    cursor: default;
   }
   &__image {
     transform: translateY(22%);
+    transition: 300ms;
   }
   &__btn {
+    transition: 300ms;
   }
 }
