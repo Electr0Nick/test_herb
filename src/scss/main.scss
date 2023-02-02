@@ -1,17 +1,12 @@
 .main {
-  &__mainslider {
+  &__mainslider,
+  &__about,
+  &__catalog,
+  &__news,
+  &__specialists{
     margin-bottom: 136px;
-  }
-  &__about {
-    margin-bottom: 136px;
-  }
-  &__catalog {
-    margin-bottom: 136px;
-  }
-  &__news {
-    margin-bottom: 136px;
-  }
-  &__specialists {
-    margin-bottom: 136px;
+    @media ($mxw1500) {
+      margin-bottom: 100px;
+    }
   }
 }

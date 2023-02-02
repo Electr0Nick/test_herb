@@ -18,22 +18,25 @@
     position: absolute;
     z-index: 1;
     &_01 {
+      width: 9%;
       bottom: -10%;
       left: 40%;
     }
     &_02 {
+      width: 11%;
       top: 35%;
       right: 0;
       transform: translateX(50%);
     }
     &_03 {
+      width: 3.5%;
       top: -6%;
       right: 17%;
     }
   }
 }
 .n-card {
-  @media ($media-mnw1) {
+  @media ($mnw992) {
     &:hover {
       .n-card__title {
         color: $pink-color;
@@ -58,6 +61,11 @@
     font-size: 18px;
     line-height: 24px;
     color: #71BD44;
+    @media ($mxw1500) {
+      margin-bottom: 13px;
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
   &__title {
     margin-bottom: 16px;
@@ -65,6 +73,16 @@
     font-size: 32px;
     line-height: 32px;
     transition: 300ms;
+    @media ($mxw1500) {
+      margin-bottom: 13px;
+      font-size: 24px;
+      line-height: 24px;
+    }
+    @media ($mxw1100) {
+      margin-bottom: 13px;
+      font-size: 22px;
+      line-height: 22px;
+    }
   }
   &__description {
   }

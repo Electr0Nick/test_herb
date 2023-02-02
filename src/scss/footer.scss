@@ -4,11 +4,26 @@
   color: #FFF;
   &__container {
     padding: 115px 0;
+    @media ($mxw1500) {
+      padding: 84px 0;
+    }
+    @media ($mxw1350) {
+      padding: 84px 30px;
+    }
+    @media ($mxw1100) {
+      padding: 84px 52px;
+    }
   }
   &__body {
     display: flex;
     height: 204px;
     margin-bottom: 102px;
+    @media ($mxw1500) {
+      margin-bottom: 55px;
+    }
+    @media ($mxw1100) {
+      margin-bottom: 52px;
+    }
   }
   &__subscribe {
     flex: 0 0 50%;
@@ -19,9 +34,14 @@
   &__info {
     display: flex;
     justify-content: space-between;
+    font-weight: 100;
     font-size: 16px;
     line-height: 24px;
     cursor: default;
+    @media ($mxw1500) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
   &__years {
     font-weight: 500;
@@ -39,6 +59,26 @@
     width: 56px;
     border: 1px solid #FFF;
     border-radius: 50%;
+    transition: 200ms;
+    @media ($mnw992) {
+      &:hover {
+        border: 1px solid transparent;
+        background-color: $pink-color;
+      }
+    }
+    @media ($mxw1500) {
+      right: 35px;
+      bottom: 75px;
+      height: 44px;
+      width: 44px;
+    }
+    @media ($mxw1350) {
+      bottom: 130px;
+    }
+    @media ($mxw1500) {
+      right: 52px;
+      bottom: 136px;
+    }
   }
   &__up-btn {
     display: flex;
@@ -52,6 +92,10 @@
     line-height: 18px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    @media ($mxw1500) {
+      font-size: 12px;
+      line-height: 14px;
+    }
   }
 }
 .subscribe {
@@ -61,6 +105,9 @@
     font-size: 19px;
     line-height: 24px;
     cursor: default;
+    @media ($mxw1500) {
+      font-size: 17px;
+    }
   }
   &__form {
     display: flex;
@@ -73,12 +120,23 @@
     padding: 18px 22px;
     border: 1px solid #FFF;
     margin-right: 14px;
+    @media ($mxw1500) {
+      width: 316px;
+      height: 46px;
+    }
+    @media ($mxw1100) {
+      width: 255px;
+      height: 46px;
+    }
     &::placeholder {
       font-weight: 500;
       font-size: 16px;
       line-height: 24px;
       text-transform: uppercase;
       color: #FFF;
+    }
+    &:focus::placeholder {
+      color: transparent;
     }
   }
   &__btn {
@@ -95,12 +153,16 @@
     border-radius: 50%;
     margin-right: 16px;
     overflow: hidden;
-    transition: 300ms;
-    @media ($media-mnw1) {
+    transition: 200ms;
+    @media ($mnw992) {
       &:hover {
         border: 1px solid transparent;
         background-color: $pink-color;
       }
+    }
+    @media ($mxw1500) {
+      width: 36px;
+      height: 36px;
     }
   }
   &__btn {
@@ -117,6 +179,12 @@
 .second-nav {
   &__list {
     column-width: 230px;
+    @media ($mxw1500) {
+      column-width: 150px;
+    }
+    @media ($mxw1100) {
+      column-width: 120px;
+    }
   }
   &__item {
   }
@@ -127,11 +195,20 @@
     line-height: 19px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    @media ($mxw1500) {
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 17px;
+    }
   }
   &__sublink {
     font-size: 16px;
     line-height: 24px;
     text-align: right;
     letter-spacing: 0.01em;
+    @media ($mxw1500) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 }

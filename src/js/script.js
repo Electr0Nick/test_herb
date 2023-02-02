@@ -42,4 +42,25 @@ for (let i = 0; i < feedbackInputs.length; i++) {
   input.addEventListener('focus', function() {
     feedbackLabels[i].classList.add('active');
   });
+  input.addEventListener('blur', function() {
+    if (!input.value)
+    feedbackLabels[i].classList.remove('active');
+  });
 }
+
+
+// ------------------------------------------------subscribe input------------------------------------------------
+const subscribeInput = document.getElementById('subscribe-input');
+const subscribeBtn = document.getElementById('subscribe-btn');
+
+subscribeInput.addEventListener('input', function() {
+  if (subscribeInput.value) {
+    subscribeBtn.disabled = false;
+    subscribeBtn.classList.remove('button_grey');
+    subscribeBtn.classList.add('button_pink');
+  } else {
+    subscribeBtn.disabled = true;
+    subscribeBtn.classList.remove('button_pink');
+    subscribeBtn.classList.add('button_grey');
+  }
+});

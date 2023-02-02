@@ -6,6 +6,12 @@
   }
   &__title {
     margin-bottom: 48px;
+    @media ($mxw1500) {
+      margin-bottom: 36px;
+    }
+    @media ($mxw1100) {
+      margin-bottom: 32px;
+    }
   }
   &__body {
     display: flex;
@@ -21,6 +27,11 @@
     height: 70px;
     border-right: 1px dashed #565658;
     margin: 8px 0;
+    @media ($mxw1500) {
+      width: 31px;
+      height: 50px;
+      margin: 7px 0;
+    }
   }
   &__right-column {
     flex: 0 0 57%;
@@ -29,16 +40,34 @@
     margin-bottom: 40px;
     cursor: default;
     &_l {
+      margin-bottom: 40px;
       font-size: 28px;
       line-height: 36px;
-      margin-bottom: 40px;
+      @media ($mxw1500) {
+        margin-bottom: 32px;
+        font-size: 22px;
+        line-height: 28px;
+      }
+      @media ($mxw1100) {
+        margin-bottom: 32px;
+        font-size: 20px;
+        line-height: 24px;
+      }
     }
     &_s {
+      margin-bottom: 30px;
       font-size: 22px;
       line-height: 30px;
-      margin-bottom: 30px;
       &:last-child{
         margin-bottom: 0;
+      }
+      @media ($mxw1500) {
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 24px;
+      }
+      @media ($mxw1100) {
+        font-size: 17px;
       }
     }
   }
@@ -48,15 +77,18 @@
     position: absolute;
     z-index: 1;
     &_01 {
+      width: 9%;
       top: 0;
       left: 40%;
     }
     &_02 {
+      width: 11%;
       top: 45%;
       right: 0;
       transform: translateX(50%);
     }
     &_03 {
+      width: 3.5%;
       bottom: -6%;
       right: 15%;
     }
@@ -68,6 +100,10 @@
   &__image {
     width: 84px;
     margin-right: 44px;
+    @media ($mxw1500) {
+      width: 62px;
+      margin-right: 33px;
+    }
   }
   &__title {
     flex: 0 1 70%;
@@ -75,5 +111,13 @@
     font-size: 32px;
     line-height: 32px;
     cursor: default;
+    @media ($mxw1500) {
+      font-size: 24px;
+      line-height: 24px;
+    }
+    @media ($mxw1100) {
+      font-size: 22px;
+      line-height: 22px;
+    }
   }
 }

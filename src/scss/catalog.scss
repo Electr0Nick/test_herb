@@ -11,10 +11,17 @@
   height: 368px;
   overflow: hidden;
   margin-bottom: 2px;
-  @media ($media-mnw1) {
+  padding-left: 125px;
+  @media ($mnw992) {
     &:hover {
       .prod-card__image {
         transform: translateY(13%);
+        @media ($mxw1500) {
+          transform: translateY(15%);
+        }
+        @media ($mxw1100) {
+          transform: translateY(18%);
+        }
       }
       .prod-card__btn {
         background-color: $main-color;
@@ -22,10 +29,17 @@
       }
     }
   }
+  @media ($mxw1500) {
+    height: 276px;
+    padding-left: 60px;
+  }
+  @media ($mxw1100) {
+    padding-left: 44px;
+  }
   &_green {
     background-color: #A3E07E;
     transition: 300ms;
-    @media ($media-mnw1) {
+    @media ($mnw992) {
       &:hover {
       background-color: #71BD44;
       }
@@ -34,7 +48,7 @@
   &_yellow {
     background-color: #FDED84;
     transition: 300ms;
-    @media ($media-mnw1) {
+    @media ($mnw992) {
       &:hover {
         background-color: #FFDD00;
       }
@@ -43,7 +57,7 @@
   &_pink {
     background-color: #FF9CCA;
     transition: 300ms;
-    @media ($media-mnw1) {
+    @media ($mnw992) {
       &:hover {
         background-color: #F669B8;
       }
@@ -52,7 +66,7 @@
   &_orange {
     background-color: #FDB96B;
     transition: 300ms;
-    @media ($media-mnw1) {
+    @media ($mnw992) {
       &:hover {
         background-color: #F9931F;
       }
@@ -69,7 +83,11 @@
     flex: 0 0 38%;
   }
   &__icon {
+    width: 84px;
     margin-bottom: 24px;
+    @media ($mxw1500) {
+      width: 62px;
+    }
   }
   &__title {
     font-weight: 700;
@@ -78,13 +96,30 @@
     letter-spacing: 0.01em;
     margin-bottom: 24px;
     cursor: default;
+    @media ($mxw1500) {
+      font-size: 36px;
+      line-height: 36px;
+    }
+    @media ($mxw1100) {
+      font-size: 30px;
+    }
   }
   &__description {
     cursor: default;
   }
   &__image {
+    width: 520px;
     transform: translateY(22%);
     transition: 300ms;
+    @media ($mxw1500) {
+      width: 404px;
+    }
+    @media ($mxw1350) {
+      width: 340px;
+    }
+    @media ($mxw1100) {
+      width: 320px;
+    }
   }
   &__btn {
     transition: 300ms;

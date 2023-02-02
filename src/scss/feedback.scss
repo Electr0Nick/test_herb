@@ -7,6 +7,12 @@
   width: 684px;
   transition: 400ms;
   transform: translateX(100%);
+  @media ($mxw1500) {
+    width: 600px;
+  }
+  @media ($mxw1100) {
+    width: 500px;
+  }
   &.active {
     transform: translateX(0);
   }
@@ -21,6 +27,12 @@
     padding-top: 106px;
     background-color: #FFF;
     border-left: 1px solid #E0E0E0;
+    @media ($mxw1700) {
+      padding-top: 80px;
+    }
+    @media ($mxw1100) {
+      padding-top: 60px;
+    }
   }
   &__title {
     margin-bottom: 90px;
@@ -29,9 +41,22 @@
     line-height: 48px;
     letter-spacing: 0.01em;
     cursor: default;
+    @media ($mxw1700) {
+      margin-bottom: 50px;
+      font-size: 40px;
+      line-height: 42px;
+    }
+    @media ($mxw1100) {
+      margin-bottom: 30px;
+      font-size: 36px;
+      line-height: 40px;
+    }
   }
   &__form {
     width: 382px;
+    @media ($mxw1100) {
+      width: 320px;
+    }
   }
   &__label {
     opacity: 0;
@@ -62,10 +87,27 @@
     &::placeholder {
       color: #959595;
     }
+    &:focus::placeholder {
+      color: transparent;
+    }
+    @media ($mxw1700) {
+      height: 30px;
+      font-size: 22px;
+      line-height: 28px;
+    }
+    @media ($mxw1500) {
+      margin-bottom: 30px;
+    }
+    @media ($mxw1100) {
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
   &__agreement {
     display: flex;
-    margin-bottom: 40px;
+    align-items: center;
+    margin: 40px 0;
   }
   &__checkbox {
     display: none;
@@ -85,6 +127,10 @@
     margin-right: 25px;
     border: 1px solid #565658;
     border-radius: 3px;
+    @media ($mxw1100) {
+      width: 30px;
+      height: 30px;
+    }
   }
   &__check {
     display: none;
@@ -94,6 +140,10 @@
     line-height: 22px;
     letter-spacing: 0.03em;
     cursor: default;
+    @media ($mxw1100) {
+      font-size: 15px;
+      line-height: 20px;
+    }
   }
   &__btn {
     margin-bottom: 36px;
@@ -108,6 +158,10 @@
       content: '* ';
       color: $pink-color;
     }
+    @media ($mxw1100) {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
   &__ticket {
     position: absolute;
@@ -118,6 +172,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media ($mxw1500) {
+      width: 36px;
+    }
     &_max {
       z-index: 51;
       top: 20%;
@@ -130,6 +187,10 @@
       &.active {
         transform: translateX(calc(100% + 6px));
       }
+      @media ($mxw1500) {
+        left: 0 - 36px;
+        height: 142px;
+      }
       & span {
         font-weight: 500;
         font-size: 16px;
@@ -137,6 +198,10 @@
         text-transform: uppercase;
         writing-mode: vertical-lr;
         transform: rotate(180deg);
+        @media ($mxw1500) {
+          font-size: 14px;
+          line-height: 18px;
+        }
       }
     }
     &_min {
@@ -146,6 +211,9 @@
       height: 56px;
       border-radius: 0% 3px 3px 0% / 0% 3px 3px 0% ;
       transform: translateY(-50%);
+      @media ($mxw1500) {
+        height: 48px;
+      }
       & img {
         display: block;
       }

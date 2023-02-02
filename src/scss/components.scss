@@ -5,6 +5,11 @@
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
+  @media ($mxw1500) {
+    padding: 14px 33px 14px 33px;
+    font-size: 14px;
+    line-height: 18px;
+  }
   &_pink {
     background-color: $pink-color;
     color: #FFF;
@@ -27,6 +32,14 @@
   letter-spacing: 0.01em;
   text-transform: uppercase;
   cursor: default;
+  @media ($mxw1500) {
+    font-size: 42px;
+    line-height: 48px;
+  }
+  @media ($mxw1100) {
+    font-size: 37px;
+    line-height: 44px;
+  }
 }
 
 .vertical-panel {
@@ -41,6 +54,12 @@
   height: 102%;
   width: 125px;
   background-color: #fff;
+  @media ($mxw1500) {
+    width: 70px;
+  }
+  @media ($mxw1100) {
+    width: 52px;
+  }
   &__title {
     color: #565658;
     font-size: 40px;
@@ -49,5 +68,13 @@
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     cursor: default;
+    @media ($mxw1500) {
+      font-size: 30px;
+      line-height: 36px;
+    }
+    @media ($mxw1500) {
+      font-size: 26px;
+      line-height: 32px;
+    }
   }
 }
