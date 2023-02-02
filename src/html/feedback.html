@@ -1,27 +1,28 @@
-<div class="feedback">
-  <form class="feedback__form">
-    <h2 class="feedback__title">Обратная связь</h2>
-    <label class="feedback__label feedback__label_required" for="name">Ваше имя</label>
-    <input class="feedback__input feedback__input_required" type="text" placeholder="Ваше имя" id="name">
-    <label class="feedback__label feedback__label_required" for="tel">Телефон</label>
-    <input class="feedback__input feedback__input_required" type="tel" placeholder="Телефон" id="tel">
-    <label class="feedback__label" for="email">E-mail</label>
-    <input class="feedback__input" type="email" placeholder="E-mail" id="email">
-    <label class="feedback__label" for="message">Сообщение</label>
-    <input class="feedback__input" type="text" placeholder="Сообщение" id="message">
-    <!-- <label><input class="search-block__checkbox" type="checkbox" value="2"><span class="search-block__label">Теннисные столы</span></label> -->
-    <div class="feedback__agreement">
-      <label>
-        <input class="feedback__checkbox" type="checkbox">
-        <div class="feedback__castom-checkbox">
-          <img class="feedback__check" src="img/feedback/check.svg" alt="Галочка">
-        </div>
-      </label>
-      <div class="feedback__description">Согласие на обработку персональных данных и с Политикой конфиденциальности</div>
-    </div>
-    <button class="feedback__btn button button_pink" type="submit">Отправить</button>
-    <div class="feedback__note">Поля, обязательные для заполнения</div>
-  </form>
-  <div class="feedback__ticket feedback__ticket_max"><span>Обратная связь</span></div>
-  <div class="feedback__ticket feedback__ticket_min"><img src="img/feedback/back.svg" alt="Стрелка"></div>
+<div class="feedback" id="feedback">
+  <div class="feedback__body">
+    <form class="feedback__form">
+      <h2 class="feedback__title">Обратная связь</h2>
+      <label class="feedback__label feedback__label_required" for="name">Ваше имя</label>
+      <input class="feedback__input feedback__input_required" type="text" placeholder="Ваше имя" id="name">
+      <label class="feedback__label feedback__label_required" for="tel">Телефон</label>
+      <input class="feedback__input feedback__input_required" type="tel" placeholder="Телефон" id="tel">
+      <label class="feedback__label" for="email">E-mail</label>
+      <input class="feedback__input" type="email" placeholder="E-mail" id="email">
+      <label class="feedback__label" for="message">Сообщение</label>
+      <input class="feedback__input" type="text" placeholder="Сообщение" id="message">
+      <div class="feedback__agreement">
+        <label>
+          <input class="feedback__checkbox" type="checkbox">
+          <div class="feedback__castom-checkbox">
+            <img class="feedback__check" src="img/feedback/check.svg" alt="Галочка">
+          </div>
+        </label>
+        <div class="feedback__description">Согласие на обработку персональных данных и с Политикой конфиденциальности</div>
+      </div>
+      <button class="feedback__btn button button_pink" type="submit">Отправить</button>
+      <div class="feedback__note">Поля, обязательные для заполнения</div>
+    </form>
+  </div>
+  <div class="feedback__ticket feedback__ticket_max" id="feedback-open"><span>Обратная связь</span></div>
+  <div class="feedback__ticket feedback__ticket_min" id="feedback-close"><img src="img/feedback/back.svg" alt="Стрелка"></div>
 </div>

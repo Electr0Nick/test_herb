@@ -1,4 +1,5 @@
 .footer {
+  position: relative;
   background-color: #565658;
   color: #FFF;
   &__container {
@@ -28,6 +29,28 @@
   &__address {
   }
   &__madefrom {
+    text-transform: uppercase;
+  }
+  &__up-link {
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+    height: 56px;
+    width: 56px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+  }
+  &__up-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
   }
 }

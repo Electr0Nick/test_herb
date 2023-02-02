@@ -6,18 +6,17 @@ export function mainSwiper() {
     wrapperClass: 'mainslider__wrapper',
     slideClass: 'mainslider__slide',
     parallax: true,
-    // loop: true,
-    // speed: 1000,
+    speed: 500,
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+  },
     // pagination: {
       // el: '.swiper-pagination',
       // type: 'bullets',
       // bulletClass: 'mainslider__bullet',
       // bulletActiveClass: 'mainslider__bullet_active',
       // clickable: true,
-    // },
-    // autoplay: {
-    //   delay: 5000,
-    //   disableOnInteraction: false,
     // },
   })
 }

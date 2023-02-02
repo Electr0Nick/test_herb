@@ -11,6 +11,12 @@ $pink-color: #EF4D9C;
 
 $media-mnw1: 'min-width: 992px';
 
+
+// ----------------------------------------------html----------------------------------------------
+html {
+  scroll-behavior: smooth;
+}
+
 // ----------------------------------------------body----------------------------------------------
 body {
     font-family: PFHandbookPro, sans-serif;
@@ -19,8 +25,6 @@ body {
     line-height: 30px;
     letter-spacing: 0em;
     color: $main-color;
-
-    min-height: 8000px; //temp
 }
 
 // ----------------------------------------------wrapper----------------------------------------------

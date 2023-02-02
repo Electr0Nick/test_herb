@@ -1,26 +1,28 @@
 <header class="header">
-  <div class="header__container container">
-    <a class="header__logo" href="##"><img src="img/header/logo.png" alt="Логотип"></a>
+  <div class="header__container container" id="header-container">
+    <div class="header__block header__block_search">
+      <form class="header__form">
+        <label class="header__label" for="search-imput">Поиск по сайту</label>
+        <input class="header__input" type="search" placeholder="например, прибиотики" id="search-imput">
+        <button class="header__btn button button_pink">найти</button>
+        <img class="header__close" src="img/header/close.svg" alt="Закрыть поиск" id="search-close">
+      </form>
+    </div>
+    <div class="header__block header__block_main">
+      <a class="header__logo" href="##"><img src="img/header/logo.png" alt="Логотип"></a>
       <nav class="header__nav first-nav">
         <ul class="first-nav__list">
-          <li class="first-nav__item"><a class="first-nav__link" href="##">каталог</a></li>
-          <li class="first-nav__item"><a class="first-nav__link" href="##">это интересно</a></li>
-          <li class="first-nav__item"><a class="first-nav__link" href="##">новости</a></li>
+          <li class="first-nav__item"><a class="first-nav__link" href="#catalog">каталог</a></li>
+          <li class="first-nav__item"><a class="first-nav__link" href="#about">это интересно</a></li>
+          <li class="first-nav__item"><a class="first-nav__link" href="#news">новости</a></li>
           <li class="first-nav__item"><a class="first-nav__link" href="##">вопрос-ответ</a></li>
-          <li class="first-nav__item"><a class="first-nav__link" href="##">специалистам</a></li>
-          <li class="first-nav__item"><a class="first-nav__link" href="##">где купить</a></li>
-          <li class="first-nav__item"><a class="first-nav__link" href="##">контакты</a></li>
+          <li class="first-nav__item"><a class="first-nav__link" href="#specialists">специалистам</a></li>
+          <li class="first-nav__item"><a class="first-nav__link" href="#partnerslider">где купить</a></li>
+          <li class="first-nav__item"><a class="first-nav__link" href="#footer">контакты</a></li>
         </ul>
       </nav>
-    <a class="header__phone" href="tel:84959692184">8 (495) 969-21-84</a>
-    <div class="header__search"><img src="img/header/search.svg" alt="Поиск"></div>
-    <div class="header__hidden">
-      <form class="header__form">
-        <label class="header__label" for="search">Поиск по сайту</label>
-        <input class="header__input" type="search" placeholder="например, прибиотики" id="search">
-        <button class="header__btn button button_pink">найти</button>
-        <img class="header__close" src="img/header/close.svg" alt="Закрыть поиск">
-      </form>
+      <a class="header__phone" href="tel:84959692184">8 (495) 969-21-84</a>
+      <div class="header__search" id="search-open"><img src="img/header/search.svg" alt="Поиск"></div>
     </div>
   </div>
 </header>

@@ -1,9 +1,90 @@
 .specialists {
+  display: flex;
   position: relative;
-  height: 738px;
-  border: 1px solid #000;
+  height: 744px;
   &__title {
+    flex-shrink: 0;
+    position: relative;
+    top: 0;
+    padding-top: 0;
+    height: 100%;
   }
   &__body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  &__bigcard {
+    width: 50%;
+    margin: 1px;
+    &:hover {
+      .specialists__btn {
+        background-color: $main-color;
+        color: #FFF;
+      }
+    }
+    &_blue {
+      background-color: #96E9F9;
+      &:hover {
+        background-color: #50DAF5;
+      }
+    }
+  }
+  &__bigcard-body {
+    height: 370px;
+    width: 100%;
+    padding: 82px 84px 0 84px;
+  }
+  &__image {
+  }
+  &__card {
+    height: 370px;
+    width: 50%;
+    display: flex;
+    margin: 1px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 70px 210px 70px 81px;
+    &:hover {
+      .specialists__btn {
+        background-color: $main-color;
+        color: #FFF;
+      }
+    }
+    &_blue {
+      width: 100%;
+    }
+    &_green {
+      background-color: #A3E07E;
+      &:hover {
+        background-color: #71BD44;
+      }
+    }
+    &_yellow {
+      background-color: #FDED84;;
+      &:hover {
+        background-color: #FFDD00;
+      }
+    }
+  }
+  &__image {
+  }
+  &__date {
+    flex-grow: 1;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: default;
+  }
+  &__topic {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32px;
+    cursor: default;
+  }
+  &__btn {
+    margin-top: 32px;
   }
 }
