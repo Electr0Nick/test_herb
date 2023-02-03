@@ -14,6 +14,7 @@
   }
   @media ($mxw1100) {
     height: 72px;
+    overflow: visible;
   }
   &__container {
     height: 200%;
@@ -22,6 +23,15 @@
     &.active {
       transform: translateY(0);
     }
+    @media ($mxw1100) {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      transform: translateY(0);
+      &.active {
+      }
+    }
   }
   &__block {
     display: flex;
@@ -29,35 +39,21 @@
     align-items: center;
     width: 100%;
     height: 50%;
+    transition: 400ms;
+    @media ($mxw1100) {
+      width: 100%;
+      padding: 0 55px;
+      height: 100%;
+      flex-shrink: 0;
+      transform: translateX(-100%);
+      &.active {
+        transform: translateX(0);
+      }
+    }
     &_search {
     }
     &_main {
     }
-  }
-  &__logo {
-    height: 56px;
-    @media ($mxw1500) {
-      height: 42px;
-    }
-    @media ($mxw1100) {
-      height: 30px;
-    }
-    & img {
-      height: 100%;
-    }
-  }
-  &__nav {
-  }
-  &__phone {
-    font-size: 24px;
-    line-height: 32px;
-    @media ($mxw1500) {
-      font-size: 20px;
-      line-height: 24px;
-    }
-  }
-  &__search {
-    cursor: pointer;
   }
   &__form {
     display: flex;
@@ -106,10 +102,103 @@
     flex-shrink: 0;
     cursor: pointer;
   }
+  &__logo {
+    height: 56px;
+    @media ($mxw1500) {
+      height: 42px;
+    }
+    @media ($mxw1100) {
+      flex-shrink: 0;
+      height: 30px;
+    }
+    & img {
+      height: 100%;
+    }
+  }
+  &__nav {
+    @media ($mxw1100) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 31;
+      height: 100vh;
+      width: 100vw;
+      pointer-events: none;
+      &.active {
+        pointer-events: auto;
+      }
+    }
+  }
+  &__phone {
+    font-size: 24px;
+    line-height: 32px;
+    @media ($mxw1500) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    @media ($mxw1100) {
+      text-align: right;
+      flex-grow: 1;
+    }
+  }
+  &__search {
+    cursor: pointer;
+    @media ($mxw1100) {
+      flex-shrink: 0;
+      margin-left: 60px;
+    }
+  }
+  &__burger {
+    display: none;
+    @media ($mxw1100) {
+      display: block;
+      flex-shrink: 0;
+      margin-left: 60px;
+      cursor: pointer;
+    }
+  }
+
 }
 .first-nav {
+  &__background {
+    display: none;
+    @media ($mxw1100) {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 32;
+      height: 100%;
+      width: 100%;
+      background-color: #50DAF5;
+      opacity: 0;
+      pointer-events: none;
+      transition: 200ms;
+      &.active {
+        opacity: 0.25;
+        pointer-events: auto;
+      }
+    }
+  }
   &__list {
     display: flex;
+    @media ($mxw1100) {
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 33;
+      width: 290px;
+      height: 100%;
+      padding: 76px 56px;
+      background-color: #FFF;
+      border-left: 1px solid #E0E0E0;
+      transition: 300ms;
+      transform: translateX(100%);
+      &.active {
+        transform: translateX(0);
+      }
+    }
   }
   &__item {
     margin-right: 40px;
@@ -119,6 +208,9 @@
     @media ($mxw1500) {
       margin-right: 20px;
     }
+    @media ($mxw1100) {
+      margin: 0;
+    }
   }
   &__link {
     font-size: 18px;
@@ -127,6 +219,60 @@
     @media ($mxw1500) {
       font-size: 17px;
       line-height: 24px;
+    }
+    @media ($mxw1100) {
+      margin-bottom: 20px;
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+  &__arrow {
+    display: none;
+    @media ($mxw1100) {
+      display: inline;
+      margin-left: 15px;
+      line-height: 32px;
+      vertical-align: middle;
+      transform: rotate(180deg);
+      cursor: pointer;
+      transition: 200ms;
+      &.active {
+        transform: rotate(0);
+      }
+    }
+  }
+  &__sublist {
+    display: none;
+    @media ($mxw1100) {
+      display: block;
+      max-height: 0;
+      margin-bottom: 0px;
+      overflow: hidden;
+      transition: 300ms;
+      &.active {
+        max-height: 180px;
+      }
+    }
+  }
+  &__sublink {
+    @media ($mxw1100) {
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.01em;
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__close {
+    display: none;
+    @media ($mxw1100) {
+      display: block;
+      position: absolute;
+      top: 24px;
+      right: 71px;
+      cursor: pointer;
     }
   }
 }

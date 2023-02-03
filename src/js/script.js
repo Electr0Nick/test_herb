@@ -17,9 +17,42 @@ const activeClass = (el) => el.classList.toggle('active');
 const searchOpen = document.getElementById('search-open');
 const searchClose = document.getElementById('search-close');
 const headerContainer = document.getElementById('header-container');
-const addActiveForSearch = () => activeClass(headerContainer);
+const arrHeaderBlocks = document.getElementsByClassName('header__block');
+
+const addActiveForSearch = () => {
+  activeClass(headerContainer);
+  for (let i = 0; i < arrHeaderBlocks.length; i++) {
+    const headerBlock = arrHeaderBlocks[i];
+    activeClass(headerBlock);
+  }
+};
 searchOpen.addEventListener('click', addActiveForSearch);
 searchClose.addEventListener('click', addActiveForSearch);
+
+// ------------------------------------------------burger------------------------------------------------
+const navListOpen = document.getElementById('burger');
+const navListClose = document.getElementById('first-nav-close');
+const nav = document.getElementById('first-nav');
+const navList = document.getElementById('first-nav-list');
+const navListBack = document.getElementById('first-nav-bg');
+const addActiveForNavList = () => {
+  activeClass(nav);
+  activeClass(navListBack);
+  activeClass(navList);
+  activeClass(feedbackOpen);
+};
+navListOpen.addEventListener('click', addActiveForNavList);
+navListClose.addEventListener('click', addActiveForNavList);
+
+
+const subList = document.getElementById('first-nav-sublist');
+const subListBtn = document.getElementById('first-nav-sublist-btn');
+const addActiveForsubList = () => {
+  activeClass(subList);
+  activeClass(subListBtn);
+}
+subListBtn.addEventListener('click', addActiveForsubList);
+
 
 
 // ------------------------------------------------feedback popup------------------------------------------------
