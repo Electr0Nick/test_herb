@@ -16,9 +16,15 @@
   &__body {
     display: flex;
     justify-content: space-between;
+    @media ($mxw950) {
+      flex-direction: column;
+    }
   }
   &__left-column {
     flex: 0 0 35%;
+    @media ($mxw950) {
+      margin-bottom: 48px;
+    }
   }
   &__dignity {
   }
@@ -31,6 +37,10 @@
       width: 31px;
       height: 50px;
       margin: 7px 0;
+    }
+    @media ($mxw1500) {
+      height: 20px;
+      margin: 5px 0;
     }
   }
   &__right-column {
@@ -80,17 +90,27 @@
       width: 9%;
       top: 0;
       left: 40%;
+      @media ($mxw950) {
+        width: 15%;
+        left: 74%;
+      }
     }
     &_02 {
       width: 11%;
       top: 45%;
       right: 0;
       transform: translateX(50%);
+      @media ($mxw950) {
+        display: none;
+      }
     }
     &_03 {
       width: 3.5%;
       bottom: -6%;
       right: 15%;
+      @media ($mxw950) {
+        display: none;
+      }
     }
   }
 }
@@ -103,6 +123,9 @@
     @media ($mxw1500) {
       width: 62px;
       margin-right: 33px;
+    }
+    @media ($mxw950) {
+      margin-right: 24px;
     }
   }
   &__title {

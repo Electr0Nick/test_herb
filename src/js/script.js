@@ -46,12 +46,15 @@ navListClose.addEventListener('click', addActiveForNavList);
 
 
 const subList = document.getElementById('first-nav-sublist');
+const subListTitle = document.getElementById('first-nav-title');
 const subListBtn = document.getElementById('first-nav-sublist-btn');
 const addActiveForsubList = () => {
   activeClass(subList);
   activeClass(subListBtn);
+  activeClass(subListTitle);
 }
 subListBtn.addEventListener('click', addActiveForsubList);
+subListTitle.addEventListener('click', addActiveForsubList);
 
 
 

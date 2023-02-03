@@ -6,6 +6,9 @@
   }
   &__title {
     margin-bottom: 48px;
+    @media ($mxw950) {
+      margin-bottom: 32px;
+    }
   }
   &__body {
     display: flex;
@@ -21,17 +24,28 @@
       width: 9%;
       bottom: -10%;
       left: 40%;
+      @media ($mxw950) {
+        width: 16%;
+        bottom: -12%;
+        left: 76%;
+      }
     }
     &_02 {
       width: 11%;
       top: 35%;
       right: 0;
       transform: translateX(50%);
+      @media ($mxw950) {
+        display: none;
+      }
     }
     &_03 {
       width: 3.5%;
       top: -6%;
       right: 17%;
+      @media ($mxw950) {
+        display: none;
+      }
     }
   }
 }

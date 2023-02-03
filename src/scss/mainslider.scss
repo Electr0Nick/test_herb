@@ -15,6 +15,9 @@
   @media ($mxw1100) {
     height: 572px;
   }
+  @media ($mxw1100) {
+    height: 534px;
+  }
   &__parralax {
     position: absolute;
     top: 0;
@@ -39,7 +42,7 @@
       top: 28%;
       left: -3%;
       @media ($mxw1100) {
-        top: 18%;
+        display: none;
       }
     }
     &_02 {
@@ -48,43 +51,74 @@
       left: 3%;
       backdrop-filter: blur(5px);
       @media ($mxw1100) {
-        top: 14%;
+        display: none;
       }
     }
     &_03 {
       width: 13%;
       top: 8%;
       left: 34%;
+      @media ($mxw950) {
+        width: 16%;
+        top: 2%;
+        left: 38%;
+      }
     }
     &_04 {
       width: 34%;
       top: 3%;
       left: 37%;
+      @media ($mxw950) {
+        width: 60%;
+        top: 3%;
+        left: 37%;
+      }
     }
     &_05 {
       width: 6%;
       top: 80%;
       left: 47%;
+      @media ($mxw950) {
+        width: 10%;
+        top: 79%;
+        left: 49%;
+      }
     }
     &_06 {
       width: 5%;
       top: 58%;
       left: 49%;
+      @media ($mxw950) {
+        width: 7%;
+        top: 66%;
+        left: 62%;
+      }
     }
     &_07 {
       width: 14%;
       top: 6%;
       left: 67%;
+      @media ($mxw950) {
+        width: 20%;
+        top: 0;
+        left: 82%;
+      }
     }
     &_08 {
       width: 6%;
       top: 8%;
       left: 88%;
+      @media ($mxw950) {
+        display: none;
+      }
     }
     &_09 {
       width: 13%;
       top: 61%;
       left: 86%;
+      @media ($mxw950) {
+        display: none;
+      }
     }
   }
   &__product {
@@ -94,17 +128,28 @@
       width: 244px;
     }
     @media ($mxw1100) {
-      width: 215px;
+      width: 220px;
     }
     &_back {
       z-index: 5;
       top: 26%;
       left: 46%;
+      @media ($mxw1100) {
+        left: 43%;
+      }
+      @media ($mxw950) {
+        top: 32%;
+        left: 53%;
+      }
     }
     &_front {
       z-index: 6;
       top: 35%;
       left: 52%;
+      @media ($mxw950) {
+        top: 41%;
+        left: 63%;
+      }
     }
   }
   &__kid {
@@ -113,6 +158,9 @@
     bottom: 0;
     right: 0;
     width: 49%;
+    @media ($mxw950) {
+      display: none;
+    }
   }
   &__wrapper {
     position: relative;
@@ -139,6 +187,9 @@
     @media ($mxw1100) {
       width: 350px;
       margin-top: 156px;
+    }
+    @media ($mxw1100) {
+      margin-top: 136px;
     }
   }
   &__title {
@@ -173,7 +224,7 @@
   }
   &__btn {
   }
-  // .swiper-pagination {
-  //   border: 1px solid #000;
-  // }
+  .swiper-pagination {
+    border: 1px solid #000;
+  }
 }

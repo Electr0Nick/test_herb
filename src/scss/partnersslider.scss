@@ -7,12 +7,18 @@
   @media ($mxw1500) {
     height: 302px;
   }
+  @media ($mxw950) {
+    height: 252px;
+  }
   &__slider {
     height: 186px;
     width: 100%;
     overflow: hidden;
     @media ($mxw1500) {
       height: 140px;
+    }
+    @media ($mxw950) {
+      height: 120px;
     }
   }
   &__wrapper {
@@ -32,6 +38,10 @@
     background-color: #FFF;
     @media ($mxw1500) {
       width: 208px;
+    }
+    @media ($mxw950) {
+      width: 178px;
+      padding: 35px;
     }
   }
   &__logo {

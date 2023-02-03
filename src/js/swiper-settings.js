@@ -11,13 +11,13 @@ export function mainSwiper() {
       enabled: true,
       onlyInViewport: true,
   },
-    // pagination: {
-      // el: '.swiper-pagination',
-      // type: 'bullets',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
       // bulletClass: 'mainslider__bullet',
       // bulletActiveClass: 'mainslider__bullet_active',
-      // clickable: true,
-    // },
+      clickable: true,
+    },
   })
 }
 
