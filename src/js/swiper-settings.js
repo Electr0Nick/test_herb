@@ -1,7 +1,14 @@
 import Swiper from './modules/swiper-bundle.esm.browser.min.js';
 
+
+
 // -----------------------------------------mainslider-----------------------------------------
 export function mainSwiper() {
+  const lilSlider = new Swiper('.lil-slider', {
+    wrapperClass: 'lil-slider__wrapper',
+    slideClass: 'lil-slider__slide',
+    slidesPerView: 3,
+  })
   const mainSlider = new Swiper('.mainslider', {
     wrapperClass: 'mainslider__wrapper',
     slideClass: 'mainslider__slide',
@@ -10,18 +17,12 @@ export function mainSwiper() {
     keyboard: {
       enabled: true,
       onlyInViewport: true,
-  },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      // bulletClass: 'mainslider__bullet',
-      // bulletActiveClass: 'mainslider__bullet_active',
-      clickable: true,
+    },
+    thumbs: {
+      swiper: lilSlider,
     },
   })
 }
-
-
 
 
 // -----------------------------------------partnersslider-----------------------------------------

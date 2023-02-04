@@ -175,6 +175,7 @@
   &__container {
     position: relative;
     z-index: 10;
+    // min-width: 0;
   }
   &__body {
     width: 590px;
@@ -223,8 +224,60 @@
     }
   }
   &__btn {
+    margin-bottom: 70px;
+    @media ($mxw1500) {
+      margin-bottom: 50px;
+    }
   }
-  .swiper-pagination {
-    border: 1px solid #000;
+  &__lil-slider{
+  }
+}
+.lil-slider {
+  overflow: hidden;
+  &__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    height: 60px;
+    @media ($mxw1500) {
+      height: 48px;
+    }
+  }
+  &__slide {
+    flex: 0 0 64px;
+    position: relative;
+    height: 100%;
+    margin-right: 12px;
+    cursor: pointer;
+    @media ($mxw1500) {
+      flex: 0 0 45px;
+    }
+    &.swiper-slide-thumb-active {
+      .lil-slider__number {
+        color: #FFF;
+      }
+      .lil-slider__img {
+        opacity: 1;
+      }
+    }
+  }
+  &__number {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    line-height: 32px;
+    transition: 300ms;
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 300ms;
   }
 }
