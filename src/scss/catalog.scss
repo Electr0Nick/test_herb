@@ -2,6 +2,9 @@
   position: relative;
   z-index: 9;
   &__title {
+    @media ($mxw500) {
+      margin-bottom: 32px;
+    }
   }
   &__card {
     width: 100%;
@@ -38,6 +41,11 @@
   }
   @media ($mxw950) {
     height: 230px;
+  }
+  @media ($mxw500) {
+    height: 372px;
+    height: auto;
+    padding: 0;
   }
   &_green {
     background-color: #A3E07E;
@@ -81,11 +89,24 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    @media ($mxw500) {
+      flex-direction: column;
+    }
   }
   &__info {
     flex: 0 0 38%;
     @media ($mxw950) {
       flex: 0 0 47%;
+    }
+    @media ($mxw700) {
+      flex: 0 0 55%;
+      margin-right: 30px;
+    }
+    @media ($mxw500) {
+      margin-bottom: 175px;
+    }
+    @media ($mxw350) {
+      margin-bottom: 150px;
     }
   }
   &__infoblock {
@@ -93,6 +114,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+    @media ($mxw500) {
+      justify-content: flex-start;
+      margin: 41px 0 20px;
     }
   }
   &__icon {
@@ -104,6 +129,9 @@
     @media ($mxw950) {
       flex-shrink: 0;
       margin: 0 17px 0 0;
+    }
+    @media ($mxw500) {
+      width: 64px;
     }
   }
   &__title {
@@ -123,6 +151,13 @@
     @media ($mxw950) {
       flex: 1 0 55%;
       margin-bottom: 0;
+      font-size: 27px;
+      line-height: 32px;
+      white-space: pre-wrap;
+    }
+    @media ($mxw500) {
+      flex: 0 1 10%;
+      margin: 0 17px 0 0;
       font-size: 27px;
       line-height: 32px;
       white-space: pre-wrap;
@@ -153,6 +188,17 @@
     }
     @media ($mxw950) {
       width: 280px;
+    }
+    @media ($mxw500) {
+      width: 280px;
+      transform: translate(-50%, 0);
+      position: absolute;
+      bottom: -97px;
+      left: 50%;
+    }
+    @media ($mxw350) {
+      bottom: -77px;
+      width: 240px;
     }
   }
   &__btn {

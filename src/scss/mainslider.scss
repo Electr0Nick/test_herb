@@ -6,9 +6,6 @@
   background-color: #F8F8F8;
   border-bottom: 1px solid #E0E0E0;
   overflow: hidden;
-  @media ($mxw1700) {
-    height: 773px;
-  }
   @media ($mxw1500) {
     height: 662px;
   }
@@ -17,6 +14,12 @@
   }
   @media ($mxw1100) {
     height: 534px;
+  }
+  @media ($mxw500) {
+    height: 812px;
+  }
+  @media ($mxw350) {
+    height: 568px;
   }
   &__parralax {
     position: absolute;
@@ -42,6 +45,15 @@
       top: 28%;
       left: -3%;
       @media ($mxw1100) {
+        top: 4%;
+        left: 2%;
+      }
+      @media ($mxw700) {
+        width: 15%;
+        top: 2%;
+        left: 2%;
+      }
+      @media ($mxw500) {
         display: none;
       }
     }
@@ -49,7 +61,6 @@
       width: 5%;
       top: 24%;
       left: 3%;
-      backdrop-filter: blur(5px);
       @media ($mxw1100) {
         display: none;
       }
@@ -63,6 +74,9 @@
         top: 2%;
         left: 38%;
       }
+      @media ($mxw500) {
+        display: none;
+      }
     }
     &_04 {
       width: 34%;
@@ -73,6 +87,16 @@
         top: 3%;
         left: 37%;
       }
+      @media ($mxw500) {
+        width: 290px;
+        top: 0;
+        left: -10%;
+      }
+      @media ($mxw350) {
+        width: 245px;
+        top: -17px;
+        left: -15%;
+      }
     }
     &_05 {
       width: 6%;
@@ -81,7 +105,19 @@
       @media ($mxw950) {
         width: 10%;
         top: 79%;
-        left: 49%;
+        left: 37%;
+      }
+      @media ($mxw700) {
+        left: 50%;
+      }
+      @media ($mxw500) {
+        width: 60px;
+        top: 290px;
+        left: 60%;
+      }
+      @media ($mxw350) {
+        width: 45px;
+        top: 225px;
       }
     }
     &_06 {
@@ -93,6 +129,16 @@
         top: 66%;
         left: 62%;
       }
+      @media ($mxw500) {
+        width: 45px;
+        top: 200px;
+        left: 15%;
+      }
+      @media ($mxw350) {
+        width: 40px;
+        top: 144px;
+        left: 10%;
+      }
     }
     &_07 {
       width: 14%;
@@ -103,21 +149,68 @@
         top: 0;
         left: 82%;
       }
+      @media ($mxw500) {
+        width: 120px;
+        top: 53px;
+        left: 70%;
+      }
+      @media ($mxw350) {
+        width: 100px;
+        top: 18px;
+      }
     }
     &_08 {
       width: 6%;
       top: 8%;
-      left: 88%;
+      left: 95%;
       @media ($mxw950) {
         display: none;
+      }
+      @media ($mxw500) {
+        display: block;
+        width: 60px;
+        top: 133px;
+        left: 95%;
+      }
+      @media ($mxw350) {
+        width: 45px;
+        top: 87px;
       }
     }
     &_09 {
       width: 13%;
       top: 61%;
-      left: 86%;
+      left: 95%;
+      @media ($mxw950) {
+        left: 105%;
+        top: 70%;
+      }
+      @media ($mxw500) {
+        width: 130px;
+        top: 230px;
+        left: 105%;
+      }
+      @media ($mxw350) {
+        width: 112px;
+        top: 165px;
+      }
+    }
+    &_10 {
+      width: 3%;
+      top: 18%;
+      left: 103%;
       @media ($mxw950) {
         display: none;
+      }
+      @media ($mxw500) {
+        display: block;
+        width: 30px;
+        top: 165px;
+        left: 115%;
+      }
+      @media ($mxw350) {
+        width: 26px;
+        top: 115px;
       }
     }
   }
@@ -130,6 +223,9 @@
     @media ($mxw1100) {
       width: 220px;
     }
+    @media ($mxw350) {
+      width: 170px;
+    }
     &_back {
       z-index: 5;
       top: 26%;
@@ -141,6 +237,17 @@
         top: 32%;
         left: 53%;
       }
+      @media ($mxw500) {
+        top: 87px;
+        left: 42%;
+        transform: translateX(-50%);
+      }
+      @media ($mxw400) {
+        left: 40%;
+      }
+      @media ($mxw350) {
+        top: 70px;
+      }
     }
     &_front {
       z-index: 6;
@@ -149,6 +256,17 @@
       @media ($mxw950) {
         top: 41%;
         left: 63%;
+      }
+      @media ($mxw500) {
+        top: 140px;
+        left: 58%;
+        transform: translateX(-50%);
+      }
+      @media ($mxw400) {
+        left: 60%;
+      }
+      @media ($mxw350) {
+        top: 110px;
       }
     }
   }
@@ -175,7 +293,6 @@
   &__container {
     position: relative;
     z-index: 10;
-    // min-width: 0;
   }
   &__body {
     width: 590px;
@@ -191,6 +308,15 @@
     }
     @media ($mxw1100) {
       margin-top: 136px;
+    }
+    @media ($mxw500) {
+      margin-top: 380px;
+    }
+    @media ($mxw400) {
+      width: 100%;
+    }
+    @media ($mxw350) {
+      margin-top: 280px;
     }
   }
   &__title {
@@ -209,6 +335,15 @@
       font-size: 44px;
       line-height: 44px;
     }
+    @media ($mxw500) {
+      margin-bottom: 28px;
+      font-size: 40px;
+    }
+    @media ($mxw350) {
+      margin-bottom: 12px;
+      font-size: 32px;
+      line-height: 32px;
+    }
   }
   &__description {
     margin-bottom: 40px;
@@ -222,11 +357,26 @@
     @media ($mxw1500) {
       font-size: 17px;
     }
+    @media ($mxw500) {
+      font-size: 22px;
+      line-height: 28px;
+    }
+    @media ($mxw350) {
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
   &__btn {
     margin-bottom: 70px;
     @media ($mxw1500) {
       margin-bottom: 50px;
+    }
+    @media ($mxw500) {
+      margin-bottom: 70px;
+    }
+    @media ($mxw350) {
+      margin-bottom: 13px;
     }
   }
   &__lil-slider{

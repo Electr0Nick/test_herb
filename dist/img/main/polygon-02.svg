@@ -1,13 +1,3 @@
-<svg width="62" height="66" viewBox="0 0 62 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_b_205_3217)">
-<path d="M28.6669 62.8548C16.5422 70.0297 1.13656 61.3896 0.936769 47.3025L0.537156 19.1267C0.337364 5.03961 15.4933 -3.9291 27.8178 2.983L52.4683 16.808C64.7928 23.7201 65.0426 41.3289 52.9178 48.5039L28.6669 62.8548Z" fill="#A3E07E"/>
-</g>
-<defs>
-<filter id="filter0_b_205_3217" x="-19.4648" y="-19.3987" width="101.328" height="104.832" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
-<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_205_3217"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_205_3217" result="shape"/>
-</filter>
-</defs>
+<svg width="208" height="226" viewBox="0 0 208 226" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M84 5.547C96.376 -1.59831 111.624 -1.59831 124 5.547L187.057 41.953C199.433 49.0983 207.057 62.3034 207.057 76.594V149.406C207.057 163.697 199.433 176.902 187.057 184.047L124 220.453C111.624 227.598 96.376 227.598 84 220.453L20.943 184.047C8.56693 176.902 0.942978 163.697 0.942978 149.406V76.594C0.942978 62.3034 8.56693 49.0983 20.943 41.953L84 5.547Z" fill="#50DAF5"/>
 </svg>

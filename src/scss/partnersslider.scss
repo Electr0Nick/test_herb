@@ -10,6 +10,9 @@
   @media ($mxw950) {
     height: 252px;
   }
+  @media ($mxw500) {
+    height: 203px;
+  }
   &__slider {
     height: 186px;
     width: 100%;
@@ -19,6 +22,9 @@
     }
     @media ($mxw950) {
       height: 120px;
+    }
+    @media ($mxw500) {
+      height: 84px;
     }
   }
   &__wrapper {
@@ -42,6 +48,9 @@
     @media ($mxw950) {
       width: 178px;
       padding: 35px;
+    }
+    @media ($mxw950) {
+      width: 126px;
     }
   }
   &__logo {

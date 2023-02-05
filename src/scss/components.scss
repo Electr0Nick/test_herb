@@ -60,6 +60,14 @@
   @media ($mxw1100) {
     width: 52px;
   }
+  @media ($mxw500) {
+    justify-content: flex-start;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 35px;
+    padding: 0 22px;
+  }
   &__title {
     color: #565658;
     font-size: 40px;
@@ -76,5 +84,24 @@
       font-size: 26px;
       line-height: 32px;
     }
+    @media ($mxw500) {
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 32px;
+      transform: rotate(0);
+      writing-mode: horizontal-tb;
+    }
   }
+}
+
+.ibg {
+  position: relative;
+}
+.ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 }

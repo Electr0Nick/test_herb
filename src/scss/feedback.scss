@@ -13,6 +13,9 @@
   @media ($mxw1100) {
     width: 500px;
   }
+  @media ($mxw500) {
+    width: 100%;
+  }
   &.active {
     transform: translateX(0);
   }
@@ -33,29 +36,42 @@
     @media ($mxw1100) {
       padding-top: 60px;
     }
+    @media ($mxw400) {
+      padding-top: 50px;
+    }
   }
   &__title {
-    margin-bottom: 90px;
+    margin-bottom: 80px;
     font-weight: 700;
     font-size: 48px;
     line-height: 48px;
     letter-spacing: 0.01em;
     cursor: default;
     @media ($mxw1700) {
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       font-size: 40px;
       line-height: 42px;
     }
     @media ($mxw1100) {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       font-size: 36px;
       line-height: 40px;
+    }
+    @media ($mxw400) {
+      font-size: 27px;
+      line-height: 32px;
     }
   }
   &__form {
     width: 382px;
     @media ($mxw1100) {
       width: 320px;
+    }
+    @media ($mxw400) {
+      width: 280px;
+    }
+    @media ($mxw350) {
+      width: 262px;
     }
   }
   &__label {
@@ -107,7 +123,10 @@
   &__agreement {
     display: flex;
     align-items: center;
-    margin: 40px 0;
+    margin: 20px 0;
+    @media ($mxw400) {
+      margin: 0 0 22px 0;
+    }
   }
   &__checkbox {
     display: none;
@@ -128,8 +147,8 @@
     border: 1px solid #565658;
     border-radius: 3px;
     @media ($mxw1100) {
-      width: 30px;
-      height: 30px;
+      width: 32px;
+      height: 32px;
     }
   }
   &__check {
@@ -144,9 +163,16 @@
       font-size: 15px;
       line-height: 20px;
     }
+    @media ($mxw400) {
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
   &__btn {
     margin-bottom: 36px;
+    @media ($mxw400) {
+      margin-bottom: 22px;
+    }
   }
   &__note {
     font-weight: 300;
@@ -165,7 +191,7 @@
   }
   &__ticket {
     position: absolute;
-    background-color: #F9931F;;
+    background-color: #F9931F;
     width: 48px;
     color: #FFF;
     cursor: pointer;
@@ -177,7 +203,7 @@
     }
     &_max {
       z-index: 51;
-      top: 20%;
+      top: 25%;
       left: 0 - 48px;
       height: 188px;
       border-radius: 3px 0% 0% 3px / 3px 0% 0% 3px ;
@@ -191,6 +217,11 @@
         left: 0 - 36px;
         height: 142px;
       }
+      @media ($mxw500) {
+        top: auto;
+        bottom: 3%;
+        height: 44px;
+      }
       & span {
         font-weight: 500;
         font-size: 16px;
@@ -201,6 +232,15 @@
         @media ($mxw1500) {
           font-size: 14px;
           line-height: 18px;
+        }
+        @media ($mxw500) {
+          display: none;
+        }
+      }
+      & img {
+        display: none;
+        @media ($mxw500) {
+          display: block;
         }
       }
     }
@@ -214,9 +254,50 @@
       @media ($mxw1500) {
         height: 48px;
       }
-      & img {
+      @media ($mxw500) {
+        background-color: transparent;
+        top: 12px;
+        left: auto;
+        right: 22px;
+        width: 24px;
+        height: 24px;
+        border-radius: 0;
+        transform: translateY(0);
+      }
+    }
+  }
+  &__ticket-img {
+    display: block;
+    &_arrow {
+      @media ($mxw500) {
+        display: none;
+      }
+    }
+    &_close {
+      display: none;
+      @media ($mxw500) {
         display: block;
       }
+    }
+  }
+}
+
+
+
+.feedback {
+
+  &__ticket {
+
+    &_min {
+    }
+  }
+
+  &__ticket-img {
+
+    &_arrow {
+    }
+
+    &_close {
     }
   }
 }

@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-@@include('html/head.html', {
+  @@include('html/head.html', {
     "title": "HERBS"
-})
+  })
 
-<body>
+  <body>
+  
+  @@include('html/header.html')
+  
+  @@include('./html/feedback.html')
+
+  <div class="parralax-box">
+
     <div class="wrapper">
-        @@include('html/header.html')
 
         <main class="main">
           <div class="main__mainslider">
@@ -32,9 +38,13 @@
 
         @@include('./html/footer.html')
 
-        @@include('./html/feedback.html')
+        
+      </div>
+    
 
-    </div>
+    @@include('./html/parralax.html')
+
+  </div>
     
     <script src="js/script.min.js"></script>
 </body>
