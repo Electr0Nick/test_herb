@@ -8,7 +8,7 @@ export function mainSwiper() {
     wrapperClass: 'lil-slider__wrapper',
     slideClass: 'lil-slider__slide',
     slidesPerView: 3,
-  })
+  });
   const mainSlider = new Swiper('.mainslider', {
     wrapperClass: 'mainslider__wrapper',
     slideClass: 'mainslider__slide',
@@ -17,7 +17,7 @@ export function mainSwiper() {
     thumbs: {
       swiper: lilSlider,
     },
-  })
+  });
 }
 
 // -----------------------------------------news-slider-----------------------------------------
@@ -45,7 +45,7 @@ export function newsSwiper() {
         simulateTouch: false,
       },
     },
-  })
+  });
 }
 
 // -----------------------------------------specialists-slider-----------------------------------------
@@ -65,7 +65,7 @@ export function specialistsSwiper() {
         slidesPerView: `auto`,
       },
     },
-  })
+  });
 }
 
 // -----------------------------------------partnersslider-----------------------------------------
@@ -82,5 +82,5 @@ export function partnersSwiper() {
       enabled: true,
       delay: 1,
     },
-  })
+  });
 }

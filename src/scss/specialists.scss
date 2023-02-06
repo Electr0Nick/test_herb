@@ -83,6 +83,7 @@
     }
     &_blue {
       background-color: #96E9F9;
+      transition: 300ms;
       &:hover {
         background-color: #50DAF5;
       }
@@ -136,11 +137,13 @@
     }
     &_green {
       background-color: #A3E07E;
+      transition: 300ms;
       &:hover {
         background-color: #71BD44;
       }
     }
     &_yellow {
+      transition: 300ms;
       background-color: #FDED84;;
       &:hover {
         background-color: #FFDD00;
@@ -186,6 +189,7 @@
   }
   &__btn {
     margin-top: 32px;
+    transition: 300ms;
     @media ($mxw1500) {
       margin-top: 24px;
     }

@@ -20,8 +20,15 @@
       left: 40%;
       @media ($mxw1500) {
         width: 105px;
+        left: 60%;
+      }
+      @media ($mxw950) {
+        top: 35%;
+        left: 70%;
       }
       @media ($mxw500) {
+        top: 55%;
+        left: 55%;
         width: 95px;
       }
     }
@@ -42,8 +49,14 @@
       right: 15%;
       @media ($mxw1500) {
         width: 50px;
+        top: 140%;
+        right: 7%;
+      }
+      @media ($mxw950) {
+        top: 120%;
       }
       @media ($mxw500) {
+        top: 150%;
         width: 40px;
       }
     }
@@ -53,6 +66,10 @@
       left: 40%;
       @media ($mxw1500) {
         width: 105px;
+        left: 60%;
+      }
+      @media ($mxw950) {
+        top: 180%;
       }
       @media ($mxw500) {
         display: none;
@@ -75,6 +92,8 @@
       right: 15%;
       @media ($mxw1500) {
         width: 50px;
+        top: 260%;
+        right: 7%;
       }
       @media ($mxw950) {
         display: none;

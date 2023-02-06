@@ -2,14 +2,23 @@
   &__mainslider,
   &__about,
   &__catalog,
-  &__news,
-  &__specialists{
+  &__news{
     margin-bottom: 136px;
     @media ($mxw1500) {
       margin-bottom: 100px;
     }
     @media ($mxw950) {
       margin-bottom: 80px;
+    }
+  }
+  &__specialists{
+    background-color: #FFF;
+    padding-bottom: 136px;
+    @media ($mxw1500) {
+      padding-bottom: 100px;
+    }
+    @media ($mxw950) {
+      padding-bottom: 80px;
     }
   }
 }

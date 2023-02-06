@@ -23,6 +23,9 @@
       align-items: center;
       padding: 48px 22px;
     }
+    @media ($mxw500) {
+      padding: 48px 22px;
+    }
   }
   &__body {
     display: flex;

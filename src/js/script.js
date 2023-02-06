@@ -10,8 +10,6 @@ specialistsSwiper();
 partnersSwiper();
 
 
-
-
 const activeClass = (el) => el.classList.toggle('active');
 
 
@@ -74,15 +72,19 @@ feedbackClose.addEventListener('click', addActiveForFeedback);
 
 const feedbackInputs = document.getElementsByClassName('feedback__input');
 const feedbackLabels = document.getElementsByClassName('feedback__label');
+const feedbackPlaceholders = document.getElementsByClassName('feedback__placeholder');
 
 for (let i = 0; i < feedbackInputs.length; i++) {
   const input = feedbackInputs[i];
   input.addEventListener('focus', function() {
     feedbackLabels[i].classList.add('active');
+    feedbackPlaceholders[i].classList.add('active');
   });
   input.addEventListener('blur', function() {
-    if (!input.value)
-    feedbackLabels[i].classList.remove('active');
+    if (!input.value) {
+      feedbackLabels[i].classList.remove('active');
+      feedbackPlaceholders[i].classList.remove('active');
+    }
   });
 }
 

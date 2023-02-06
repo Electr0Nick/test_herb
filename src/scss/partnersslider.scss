@@ -40,18 +40,20 @@
     align-items: center;
     height: 100%;
     width: 278px;
-    padding: 50px;
     background-color: #FFF;
     @media ($mxw1500) {
       width: 208px;
     }
     @media ($mxw950) {
       width: 178px;
-      padding: 35px;
     }
-    @media ($mxw950) {
+    @media ($mxw500) {
       width: 126px;
     }
+  }
+  &__slide-body {
+    height: 60%;
+    width: 60%;
   }
   &__logo {
   }
