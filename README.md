@@ -1,6 +1,6 @@
 # test_herb
 
-![скрин](https://github.com/Electr0Nick/test_herb/tree/main/src/files/screenshot.png?raw=true)
+![скрин](https://github.com/Electr0Nick/test_herb/blob/main/src/files/screenshot.PNG?raw=true)
 
 ### Описание:
 
